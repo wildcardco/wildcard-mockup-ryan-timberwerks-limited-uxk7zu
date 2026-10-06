@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timberwerks Limited | Custom Cabinets in Mokena, IL</title>
+<meta name="description" content="Timberwerks Limited is a small custom cabinet shop in Mokena, IL. It builds made-to-measure kitchen cabinetry, bathroom vanities, and built-ins for the southwest Chicago suburbs.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  :root{
+    --charcoal:#2b2824;
+    --panel:#f1ece2;
+    --walnut:#6b4226;
+    --oak:#c9a66b;
+    --ink:#1a1816;
+    --cond:'Oswald','Archivo Narrow','Arial Narrow',sans-serif;
+    --serif:'Source Serif 4','Source Serif Pro',Georgia,serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;border-radius:0}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--charcoal);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.75;cursor:auto}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  a.text-link:hover,a.text-link:focus{text-decoration:underline;text-underline-offset:3px}
+  :focus-visible{outline:2px solid var(--oak);outline-offset:3px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--panel);color:var(--ink);padding:.5rem 1rem;font-family:var(--cond)}
+  .skip:focus{left:1rem;top:1rem;z-index:10}
+
+  /* Top bar */
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.75rem 1.25rem;background:var(--charcoal);color:var(--panel);font-family:var(--cond);text-transform:uppercase;letter-spacing:.16em;font-size:.85rem;border-bottom:2px solid var(--walnut)}
+  .topbar .name{font-weight:600}
+  .topbar a{color:var(--oak)}
+
+  /* Hero */
+  .hero{position:relative;width:100%;height:80vh;min-height:480px;background:var(--charcoal);overflow:hidden}
+  .hero img{width:100%;height:100%;object-fit:cover}
+  .hero-bar{position:absolute;left:0;right:0;bottom:0;background:rgba(43,40,36,.94);color:var(--panel);padding:1.5rem 1.25rem 1.75rem;border-top:2px solid var(--walnut)}
+  .eyebrow{font-family:var(--cond);text-transform:uppercase;letter-spacing:.24em;font-size:.78rem;color:var(--oak);margin:0 0 .4rem;font-weight:500}
+  h1,h2,h3{font-family:var(--cond);text-transform:uppercase;font-weight:600;letter-spacing:.1em;line-height:1.1;margin:0}
+  h1{font-size:clamp(2.2rem,8vw,4.5rem);letter-spacing:.12em}
+  .tagline{margin:.6rem 0 1.25rem;font-size:1.1rem;max-width:44ch;color:#e6dfd1}
+  .btn{display:inline-block;font-family:var(--cond);text-transform:uppercase;letter-spacing:.16em;font-size:.95rem;font-weight:500;padding:.85rem 1.5rem;background:var(--walnut);color:var(--panel);border:1px solid var(--oak)}
+  .btn:hover,.btn:focus{background:#5a371f}
+  .btn.ghost{background:transparent;color:var(--walnut);border-color:var(--walnut)}
+  .btn.ghost:hover,.btn.ghost:focus{background:var(--walnut);color:var(--panel)}
+
+  /* Bands */
+  .band{background:var(--panel);border-top:2px solid var(--charcoal)}
+  .band + .band{border-top:2px solid var(--charcoal)}
+  .module{display:grid;grid-template-columns:1fr;max-width:1240px;margin:0 auto}
+  .module figure{margin:0;background:var(--charcoal);min-height:280px}
+  .module figure img{width:100%;height:100%;min-height:280px;max-height:560px;object-fit:cover}
+  .text{padding:2.5rem 1.5rem 3rem}
+  .text .eyebrow{color:var(--walnut)}
+  h2{font-size:clamp(1.7rem,5vw,2.6rem);color:var(--ink);margin-bottom:1rem}
+  .text p{margin:0 0 1rem;max-width:56ch}
+  .rule{width:64px;height:2px;background:var(--walnut);border:0;margin:0 0 1.25rem}
+  .specs{list-style:none;margin:1.25rem 0 1.75rem;padding:0;border-top:1px solid #cfc6b5}
+  .specs li{padding:.6rem 0;border-bottom:1px solid #cfc6b5;display:flex;gap:1rem;justify-content:space-between;flex-wrap:wrap}
+  .specs span:first-child{font-family:var(--cond);text-transform:uppercase;letter-spacing:.14em;font-size:.82rem;color:var(--walnut)}
+
+  /* Contact */
+  .contact{background:var(--charcoal);color:var(--panel);border-top:2px solid var(--walnut)}
+  .contact-inner{max-width:1240px;margin:0 auto;padding:3.5rem 1.5rem;display:grid;gap:2.5rem}
+  .contact h2{color:var(--panel)}
+  .contact p{margin:0 0 1rem;max-width:52ch;color:#e6dfd1}
+  .facts{display:grid;gap:1.5rem}
+  .fact h3{font-size:.85rem;letter-spacing:.24em;color:var(--oak);font-weight:500;margin-bottom:.35rem}
+  .fact p{margin:0;font-size:1.15rem;color:var(--panel)}
+  .contact .btn{margin-top:.5rem}
+
+  footer{background:var(--charcoal);color:#b8af9f;border-top:2px solid var(--walnut);padding:1.5rem;text-align:center;font-size:.9rem}
+  footer p{margin:.25rem 0}
+
+  @media (min-width:860px){
+    .topbar{padding:.85rem 2.5rem}
+    .hero-bar{padding:2rem 2.5rem 2.25rem;display:grid;grid-template-columns:1fr auto;align-items:end;gap:2rem}
+    .hero-bar .btn{justify-self:end}
+    .tagline{margin-bottom:0}
+    .module{grid-template-columns:1fr 1fr;min-height:480px}
+    .module figure img{max-height:none;height:100%}
+    .band.flip figure{order:2}
+    .text{padding:4rem 3.5rem;align-self:center}
+    .contact-inner{grid-template-columns:1.2fr 1fr;padding:5rem 2.5rem}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <span class="name">Timberwerks Limited</span>
+  <a class="text-link" href="tel:17084787475">(708) 478-7475</a>
+</header>
+
+<main id="main">
+  <section class="hero" aria-label="Timberwerks Limited">
+    <img src="https://images.pexels.com/photos/8089156/pexels-photo-8089156.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-photo-slot="hero" data-photo-query="custom wood cabinet shop interior with tools" alt="Custom wood cabinet shop interior with tools">
+    <div class="hero-bar">
+      <div>
+        <p class="eyebrow">Custom Cabinet Shop · Mokena, Illinois</p>
+        <h1>Timberwerks Limited</h1>
+        <p class="tagline">Made-to-measure cabinetry, built by the people you talk to, for the space you actually have.</p>
+      </div>
+      <a class="btn" href="tel:17084787475">Request a Free Estimate</a>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="kitchen">
+    <div class="module">
+      <figure>
+        <img src="https://images.pexels.com/photos/35564326/pexels-photo-35564326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-photo-slot="service-1" data-photo-query="custom kitchen cabinets installed" alt="Custom kitchen cabinets installed" loading="lazy">
+      </figure>
+      <div class="text">
+        <p class="eyebrow">Service</p>
+        <h2 id="kitchen">Custom Kitchen Cabinetry</h2>
+        <hr class="rule">
+        <p>Stock boxes come in three-inch steps, and your kitchen does not. We measure the room and build each cabinet to fit it. That covers the odd corner, the out-of-plumb wall, and the window that sits two inches off center.</p>
+        <p>You choose the wood, the door style, and the finish. We build the cabinets in our shop here in Mokena.</p>
+        <ul class="specs">
+          <li><span>Sizing</span><span>Made to measure, non-stock</span></li>
+          <li><span>Species</span><span>Your choice of wood and finish</span></li>
+          <li><span>For</span><span>Homeowners &amp; remodeling contractors</span></li>
+        </ul>
+        <a class="btn ghost" href="tel:17084787475">Talk Through Your Kitchen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band flip" aria-labelledby="vanities">
+    <div class="module">
+      <figure>
+        <img src="https://images.pexels.com/photos/36511379/pexels-photo-36511379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-photo-slot="service-2" data-photo-query="custom wood bathroom vanity" alt="Custom wood bathroom vanity" loading="lazy">
+      </figure>
+      <div class="text">
+        <p class="eyebrow">Service</p>
+        <h2 id="vanities">Bathroom Vanities</h2>
+        <hr class="rule">
+        <p>We build vanities sized to the room rather than to a catalog. You can add drawers where you need them and pick a height that works for the people using it. The wood is finished to stand up to a bathroom.</p>
+        <p>We work with single vanities, double vanities, and tight powder rooms. Bring us your measurements or have us take them.</p>
+        <ul class="specs">
+          <li><span>Layout</span><span>Single, double, or custom width</span></li>
+          <li><span>Storage</span><span>Drawers and doors set to how you use it</span></li>
+        </ul>
+        <a class="btn ghost" href="tel:17084787475">Plan a Vanity</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="builtins">
+    <div class="module">
+      <figure>
+        <img src="https://pixabay.com/get/g7bb9d0803549d1e8e3fc11d896fa70874e633b67972ee8af6feddfb0e41e9ea00ee3c30b7a895586c3374b8a6a2695f9bf4499b116ecea2862ea38cc35c973ff_1280.jpg" data-photo-slot="service-3" data-photo-query="built in wood shelving unit" alt="Built in wood shelving unit" loading="lazy">
+      </figure>
+      <div class="text">
+        <p class="eyebrow">Service</p>
+        <h2 id="builtins">Built-In Shelving &amp; Storage</h2>
+        <hr class="rule">
+        <p>We build bookcases, entertainment units, mudroom lockers, and closet systems. All of them are fitted wall to wall so they look like part of the house.</p>
+        <p>We also reface and refinish existing cabinets when the boxes are sound and only the faces need work.</p>
+        <ul class="specs">
+          <li><span>Built-ins</span><span>Shelving &amp; entertainment units</span></li>
+          <li><span>Storage</span><span>Closet and storage systems</span></li>
+          <li><span>Existing</span><span>Cabinet refacing &amp; refinishing</span></li>
+        </ul>
+        <a class="btn ghost" href="tel:17084787475">Ask About a Built-In</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band flip" aria-labelledby="about">
+    <div class="module">
+      <figure>
+        <img src="https://images.pexels.com/photos/18724168/pexels-photo-18724168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-photo-slot="about" data-photo-query="woodshop owner working on cabinet" alt="Woodshop owner working on a cabinet" loading="lazy">
+      </figure>
+      <div class="text">
+        <p class="eyebrow">About the Shop</p>
+        <h2 id="about">A Small Shop on Purpose</h2>
+        <hr class="rule">
+        <p>Timberwerks Limited is a hands-on cabinet shop in Mokena. We stay small, so the person you talk to about your project is the person building it. No call center stands between you and the bench.</p>
+        <p>We work directly with homeowners. We also serve as the local cabinet partner for general contractors and builders who need work done right and on schedule.</p>
+        <ul class="specs">
+          <li><span>Who we build for</span><span>Homeowners, contractors, builders</span></li>
+          <li><span>Where</span><span>19225 Henry Dr, Mokena</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="gallery">
+    <div class="module">
+      <figure>
+        <img src="https://images.pexels.com/photos/6969862/pexels-photo-6969862.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" data-photo-slot="gallery" data-photo-query="finished custom cabinetry close up grain" alt="Finished custom cabinetry close up showing wood grain" loading="lazy">
+      </figure>
+      <div class="text">
+        <p class="eyebrow">Finished Work</p>
+        <h2 id="gallery">Finished Work Gallery</h2>
+        <hr class="rule">
+        <p>We pay attention to the tight reveals, the matched grain, and the doors that close square. That is the difference between shop-built and big-box.</p>
+        <p>Want to see more of what comes out of the shop? Call us and we will walk you through past projects similar to yours.</p>
+        <a class="btn ghost" href="tel:17084787475">See More Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="contact">
+    <div class="contact-inner">
+      <div>
+        <p class="eyebrow">Free Estimate</p>
+        <h2 id="contact">Start Your Cabinet Project</h2>
+        <p>Call with your room size, what you want built, and a rough timeline. We will talk through wood, finish, and layout, then set up a free estimate.</p>
+        <a class="btn" href="tel:17084787475">Call (708) 478-7475</a>
+      </div>
+      <div class="facts">
+        <div class="fact">
+          <h3>Shop</h3>
+          <p>Timberwerks Limited<br>19225 Henry Dr<br>Mokena, IL 60448</p>
+        </div>
+        <div class="fact">
+          <h3>Phone</h3>
+          <p><a class="text-link" href="tel:17084787475">(708) 478-7475</a></p>
+        </div>
+        <div class="fact">
+          <h3>Service Area</h3>
+          <p>Mokena, Tinley Park, Frankfort, New Lenox, and the surrounding southwest Chicago suburbs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Timberwerks Limited · Mokena, Illinois</p>
+  <p>Website sample by Wild Card Creative Co</p>
+</footer>
+</body>
+</html>
